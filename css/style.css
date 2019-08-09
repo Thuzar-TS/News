@@ -247,10 +247,12 @@ body {
 .imagePreview {
     width: 400%;
     height: 300px;
-    background-position: center center;
     background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
     background-color: #fff;
     background-size: cover;
+    position: relative;
+    right: 15px;
+    background-position: center;
 }
 
 .btn-primary {
@@ -300,9 +302,21 @@ body {
     background-color: #118063 !important;
     width: 170px;
     color: white !important;
+    position: relative;
+    right: 15px;
+}
+.menu-pos{
+    position: relative;
+    right: 15px;
 }
 
 .caret {
     margin-left: 15px;
+}
+.news-post {
+    background-color: #118063 !important;
+    color: white !important;
+    position: relative;
+    left: 15px;
 }
 /* End Create News */
