@@ -40,6 +40,10 @@ body {
 }
 
 /* News List */
+#content {
+    /* height: 800px; */
+    overflow: auto;
+}
 #content .news-post p {
     font-size: 14px;
 }

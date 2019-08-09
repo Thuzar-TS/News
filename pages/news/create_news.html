@@ -26,16 +26,16 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>My Page</h3>
+                <h3>Admin</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#">
+                <li>
+                    <a href="news_list.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp; Search News List
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="create_news.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp; News Create
                     </a>
@@ -160,9 +160,7 @@
             });
         });
         $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
-            });
+            $('#content').height(($(document).height()-200)+"px");
         });
     </script>
 </body>
