@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="../../css/style.css" type="text/css">
+        <link rel="stylesheet" href="../../css/setup.css" type="text/css">
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+                integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+                crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+                integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+                crossorigin="anonymous"></script>
+        <title>News</title>
+</head>
+
+<body>
+
+        <header class="navbar navbar-expand-lg fixed-top navbar-light main-header">
+                <a class="navbar-brand"><img src="../../images/news_search.png" alt=""></a>
+                <form class="form-inline container-fluid ">
+                        <input class="form-control col-lg mr-sm-2 d-flex p-2" type="search" placeholder="サーチ"
+                                aria-label="Search">
+                        <button class="btn my-2 my-sm-0 all-btn" type="submit">ウェブ検索</button>
+                </form>
+                <button type="button" class="btn mr-sm-2 d-flex login-register-btn">Login</button>
+                <button type="button" class="btn login-register-btn">Register</button>
+        </header>
+        <section class="main-content">
+                <div class="container-fluid main-wrapper">
+                        <div class="row justify-content-md-center">                                
+                                <div class="col-md container">
+                                        <!-- <div class="row">
+                                                <div class="col-12">
+                                                        <div class="card tab-card">
+                                                                <div class="card-header tab-card-header">
+                                                                        <ul class="nav nav-tabs card-header-tabs"
+                                                                                id="myTab" role="tablist">
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link" id="one-tab"
+                                                                                                data-toggle="tab"
+                                                                                                href="#one" role="tab"
+                                                                                                aria-controls="One"
+                                                                                                aria-selected="true">One</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link" id="two-tab"
+                                                                                                data-toggle="tab"
+                                                                                                href="#two" role="tab"
+                                                                                                aria-controls="Two"
+                                                                                                aria-selected="false">Two</a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                        <a class="nav-link"
+                                                                                                id="three-tab"
+                                                                                                data-toggle="tab"
+                                                                                                href="#three" role="tab"
+                                                                                                aria-controls="Three"
+                                                                                                aria-selected="false">Three</a>
+                                                                                </li>
+                                                                        </ul>
+                                                                </div>
+
+                                                                <div class="tab-content" id="myTabContent">
+                                                                        <div class="tab-pane fade show active p-3"
+                                                                                id="one" role="tabpanel"
+                                                                                aria-labelledby="one-tab">
+                                                                                <h5 class="card-title">Tab Card One</h5>
+                                                                                <p class="card-text">Some quick example
+                                                                                        text to build on the card title
+                                                                                        and make up the bulk of the
+                                                                                        card's content.</p>
+                                                                                <a href="#" class="btn btn-primary">Go
+                                                                                        somewhere</a>
+                                                                        </div>
+                                                                        <div class="tab-pane fade p-3" id="two"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="two-tab">
+                                                                                <h5 class="card-title">Tab Card Two</h5>
+                                                                                <p class="card-text">Some quick example
+                                                                                        text to build on the card title
+                                                                                        and make up the bulk of the
+                                                                                        card's content.</p>
+                                                                                <a href="#" class="btn btn-primary">Go
+                                                                                        somewhere</a>
+                                                                        </div>
+                                                                        <div class="tab-pane fade p-3" id="three"
+                                                                                role="tabpanel"
+                                                                                aria-labelledby="three-tab">
+                                                                                <h5 class="card-title">Tab Card Three
+                                                                                </h5>
+                                                                                <p class="card-text">Some quick example
+                                                                                        text to build on the card title
+                                                                                        and make up the bulk of the
+                                                                                        card's content.</p>
+                                                                                <a href="#" class="btn btn-primary">Go
+                                                                                        somewhere</a>
+                                                                        </div>
+
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div> -->
+
+        
+        <!-- new list -->
+        <!-- row 1 -->
+        <div class="scroll">
+            <div class="row">
+                <div class="col-sm-3  col-md-3 mt-2">
+                    <div class="hovereffect fit-image">
+                        <img class="img-responsive fit-image"   src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+                            <div class="overlay">
+                                <h2>title</h2>     
+                                    <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                            </div>
+                            <div class="info">
+                                <div class="row">
+                                    <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                    </div>
+                                    <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-3  col-md-3 mt-2">
+                    <div class="hovereffect fit-image">
+                        <img class="img-responsive fit-image"  src="https://images.pexels.com/photos/673803/pexels-photo-673803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            <div class="overlay">
+                                <h2>title</h2>
+                                <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                            </div>
+                            <div class="info">
+                                <div class="row">
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                </div>
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3  col-md-3 mt-2">
+                    <div class="hovereffect fit-image">
+                        <img class="img-responsive fit-image"  src="https://images.pexels.com/photos/2642008/pexels-photo-2642008.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                            <div class="overlay">
+                                <h2>title</h2>
+                                <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                            </div>
+                            <div class="info">
+                                <div class="row">
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                </div>
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3  col-md-3 mt-2">
+                    <div class="hovereffect fit-image">
+                        <img class="img-responsive fit-image"  src="https://static.addtoany.com/images/dracaena-cinnabari.jpg" alt="">
+                            <div class="overlay">
+                                <h2>title</h2>
+                                <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                            </div>
+                            <div class="info">
+                                <div class="row">
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                </div>
+                                <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- row 1 -->
+            <!-- row 2 -->
+            <div class="row mt-2">
+                    <div class="col-sm-3  col-md-3 mt-2">
+                        <div class="hovereffect fit-image">
+                            <img class="img-responsive fit-image"   src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+                                <div class="overlay">
+                                    <h2>title</h2>     
+                                        <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                                </div>
+                                <div class="info">
+                                <div class="row">
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                        </div>
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                        </div>
+                                </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3  col-md-3 mt-2">
+                        <div class="hovereffect fit-image">
+                            <img class="img-responsive fit-image"  src="https://images.pexels.com/photos/673803/pexels-photo-673803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                <div class="overlay">
+                                    <h2>title</h2>
+                                    <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                                </div>
+                                <div class="info">
+                                <div class="row">
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                        </div>
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                        </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3  col-md-3 mt-2">
+                        <div class="hovereffect fit-image">
+                            <img class="img-responsive fit-image"  src="https://images.pexels.com/photos/2642008/pexels-photo-2642008.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                <div class="overlay">
+                                    <h2>title</h2>
+                                    <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                                </div>
+                                <div class="info">
+                                <div class="row">
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                        </div>
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                        </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3  col-md-3 mt-2">
+                        <div class="hovereffect fit-image">
+                            <img class="img-responsive fit-image"  src="https://static.addtoany.com/images/dracaena-cinnabari.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>title</h2>
+                                    <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                                </div>
+                                <div class="info">
+                                <div class="row">
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                        </div>
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                        </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- row 2 -->
+            <!-- row 3 -->
+            <div class="row mt-2">
+                    <div class="col-sm-3  col-md-3 mt-2">
+                        <div class="hovereffect fit-image">
+                            <img class="img-responsive fit-image"   src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+                                <div class="overlay">
+                                    <h2>title</h2>     
+                                        <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                                </div>
+                                <div class="info">
+                                <div class="row">
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                        </div>
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                        </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3  col-md-3 mt-2">
+                        <div class="hovereffect fit-image">
+                            <img class="img-responsive fit-image"  src="https://images.pexels.com/photos/673803/pexels-photo-673803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                                <div class="overlay">
+                                    <h2>title</h2>
+                                    <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                                </div>
+                                <div class="info">
+                                <div class="row">
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                        </div>
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                        </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3  col-md-3 mt-2">
+                        <div class="hovereffect fit-image">
+                            <img class="img-responsive fit-image"  src="https://images.pexels.com/photos/2642008/pexels-photo-2642008.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                                <div class="overlay">
+                                    <h2>title</h2>
+                                    <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                                </div>
+                                <div class="info">
+                                <div class="row">
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                        </div>
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                        </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3  col-md-3 mt-2">
+                        <div class="hovereffect fit-image">
+                            <img class="img-responsive fit-image"  src="https://static.addtoany.com/images/dracaena-cinnabari.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>title</h2>
+                                    <a class="btn btn-sm btn-info" href="#">View Detail</a>
+                                </div>
+                                <div class="info">
+                                <div class="row">
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-address-card"></i> - address <br>
+                                        <i class="fas fa-info-circle"></i> - info<br>
+                                        <i class="fas fa-phone-square"></i> - email@email.com
+                                        </div>
+                                        <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+                                        <i class="fas fa-phone"></i> - +95912345667 <br>
+                                        <i class="fas fa-users"></i> - Title<br>
+                                        <i class="fas fa-user-tag"></i> - Title
+                                        </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- row 3 -->
+            <!-- new list end -->
+        </div>
+
+
+                                </div>
+                                                               
+                                <div class="col-md-auto">
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                                card title and make up the bulk of the card's content.
+                                                        </p>
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                </div>
+                                        </div>
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                                card title and make up the bulk of the card's content.
+                                                        </p>
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                </div>
+                                        </div>
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                                card title and make up the bulk of the card's content.
+                                                        </p>
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                </div>
+
+        </section>
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="../../js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+                $(document).ready(function () {
+
+                });
+        </script>
+
+</body>
+
+</html>
