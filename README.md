@@ -1,0 +1,2 @@
+# News
+News (Sample project)
