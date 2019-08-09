@@ -12,6 +12,10 @@
     
 }
 
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
 .p-t-0 {
     padding-top: 0px;
 }
@@ -19,4 +23,15 @@
 .m-t-16
 {
     margin-top: 16px;
+}
+.main-color {
+    color: #333;
+}
+
+.white {
+    color: #fff;
+}
+
+.main-bg-color {
+    background-color: #0f6064 !important;
 }
