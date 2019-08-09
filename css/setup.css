@@ -30,5 +30,27 @@
 }
 
 .main-bg-color {
-    background-color: #0f6064 !important;
+    background-color: #118063 !important;
+}
+.m-b-10{
+    margin-bottom: 10px;
+}
+.all-btn{
+    background-color: #f5a750;
+    color: #fff;
+    border:none;
+}
+.login-register-btn{
+    background-color: transparent;
+    color: #000;
+    border: none;
+    font-weight: bold;
+}
+.login-register-btn:hover, .login-register-btn:active, .login-register-btn:focus{
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+}
+.btn.focus, .btn:focus{
+    box-shadow: none !important;
 }
