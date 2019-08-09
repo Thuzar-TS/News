@@ -2,7 +2,7 @@
 body {
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     /* background: #dfdfde; */
-    background: #e5feff;
+    background: #edfffa;
 }
 .txt
 {
@@ -50,7 +50,7 @@ body {
 			width: 350px;
 			margin-top: auto;
 			margin-bottom: auto;
-			background: #0f6064;
+			background: #118063;
 			position: relative;
 			display: flex;
 			justify-content: center;
@@ -68,7 +68,7 @@ body {
 			width: 170px;
 			top: -75px;
 			border-radius: 50%;
-			background: #5eb1b5;
+			background: #4db197;
 			padding: 10px;
 			text-align: center;
 		}
@@ -83,7 +83,7 @@ body {
 		}
 		.login_btn {
 			width: 100%;
-			background: #5eb1b5 !important;
+			background: #4db197 !important;
 			color: white !important;
 		}
 		.login_btn:focus {
@@ -94,7 +94,7 @@ body {
 			padding: 0 2rem;
 		}
 		.input-group-text {
-			background: #5eb1b5 !important;
+			background: #4db197 !important;
 			color: white !important;
 			border: 0 !important;
 			border-radius: 0.25rem 0 0 0.25rem !important;
