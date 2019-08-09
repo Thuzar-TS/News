@@ -18,78 +18,81 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    
+    <style>
+        .error {
+            color: #FF0000;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .imagePreview {
+            width: 400%;
+            height: 300px;
+            background-position: center center;
+            background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+            background-color: #fff;
+            background-size: cover;
+        }
+        
+        .btn-primary {
+            display: block;
+            border-radius: 0px;
+            box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
+            margin-top: -5px;
+        }
+        
+        .imgUp {
+            margin-bottom: 15px;
+        }
+        
+        .del {
+            position: absolute;
+            top: 0px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+        }
+        
+        .uploadFile {
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+        }
+        
+        .imgAdd {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #4bd7ef;
+            color: #fff;
+            box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            line-height: 30px;
+            margin-top: 0px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        
+        .bg-color {
+            background-color: #0f6064 !important;
+            width: 170px;
+            color: white !important;
+        }
+        
+        .caret {
+            margin-left: 15px;
+        }
+    </style>
 </head>
-<style>
-    .error {
-        color: #FF0000;
-    }
-    
-    body {
-        background-color: #f5f5f5;
-    }
-    
-    .imagePreview {
-        width: 400%;
-        height: 300px;
-        background-position: center center;
-        background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
-        background-color: #fff;
-        background-size: cover;
-    }
-    
-    .btn-primary {
-        display: block;
-        border-radius: 0px;
-        box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
-        margin-top: -5px;
-    }
-    
-    .imgUp {
-        margin-bottom: 15px;
-    }
-    
-    .del {
-        position: absolute;
-        top: 0px;
-        right: 15px;
-        width: 30px;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-        background-color: rgba(255, 255, 255, 0.6);
-        cursor: pointer;
-    }
-    .uploadFile{
-        width: 0px;height: 0px;overflow: hidden;
-    }
-    
-    .imgAdd {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: #4bd7ef;
-        color: #fff;
-        box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        line-height: 30px;
-        margin-top: 0px;
-        cursor: pointer;
-        font-size: 15px;
-    }
-    .bg-color {
-    background-color: #0f6064 !important;
-    width: 104px;
-    color: white !important;
-}
-.caret{
-    margin-left:15px;
-}
-</style>
 
 <body>
-
-    <div class="wrapper">
+    <div class="wrapper col-md-10 offset-md-1">
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -103,17 +106,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="create_news.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp; News Create
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../users/users_list.html">
                         <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp; Users
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../categories/categories_list.html">
                         <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp; Categories
                     </a>
                 </li>
@@ -128,85 +131,78 @@
                     </a>
                 </li>
             </ul>
-
         </nav>
-
         <!-- Page Content  -->
         <div id="content">
             <div class="container">
-                <div class="jumbotron">
-                    <div class="col-md-12">
-                        <div class="card bg-light text-dark">
-                            <div class="card-body">
-                                <div class="col-md-12">
+                <div class="col-md-12">
+                    <div class="card bg-light text-dark">
+                        <div class="card-body">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4 class="page-header">ニュース投稿を作成</h4>
+                                        <br>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>題名:<span class="error">*</span></label>
+                                            <input type="text" class="form-control" name="title">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="btn-group">
+                                            <button class="btn main-bg-color white dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    種類
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Doctor</a></li>
+                                                <li><a href="#">Nurse</a></li>
+                                                <li><a href="#">Pharmacist</a></li>
+                                                <li><a href="#">Administrative Staff</a></li>
+                                                <li><a href="#">Therapists</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br>
+                                            <label>内容:<span class="error">*</span></label>
+                                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-sm-2 imgUp">
+                                            <br>
+                                            <label>メディア:<span class="error">*</span></label>
+                                            <br>
+                                            <a class="btn bg-color">
+                                                    写真/画像を投稿する
+                                                 <input type="file" class="uploadFile img" value="Upload Photo">
+                                             </a>
+                                            <div class="imagePreview"></div>
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h4 class="page-header">Create News Post</h4>
+                                            <br>
+                                            <a href="" class="btn main-bg-color white">ニュースを投稿する</a>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Title:<span class="error">*</span></label>
-                                                <input type="text" class="form-control" name="title">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="btn-group">
-                                                    <button class="btn main-bg-color white dropdown-toggle" type="button" data-toggle="dropdown">
-                                                    Category
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                        <li><a href="#">HTML</a></li>
-                                                        <li><a href="#">CSS</a></li>
-                                                        <li><a href="#">JavaScript</a></li>
-                                                      </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <br>
-                                                <label>Contents:<span class="error">*</span></label>
-                                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="col-sm-2 imgUp">
-                                                <br>
-                                                <label>Media:<span class="error">*</span></label>
-                                                <br>
-                                                <a class="btn bg-color">
-                                                    Upload
-                                                    <input type="file" class="uploadFile img" value="Upload Photo">
-                                                </a>
-                                                <div class="imagePreview"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <br>
-                                                <a href="" class="btn main-bg-color white">Post News</a>
-                                            </div>
-                                        </div>
-
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2"></div>
         </div>
     </div>
-    </div>
-    </div>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <!-- <script src="../../js/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
-    <!-- Bootstrap JS -->
-    <!-- <script src="../../js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="../../js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
         $(".imgAdd").click(function() {
