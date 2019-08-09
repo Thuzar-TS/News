@@ -1,1 +1,25 @@
 /* style for individual page and overall */
+.txt
+{
+    text-align:center;
+    background-color:grey;
+    padding: 20px;
+    margin-bottom:2%;
+    letter-spacing: 2px;
+    color:white;
+}
+.box
+{
+    padding: 22px;
+    /* border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0px; */
+}
+
+.con
+{
+    padding: 33px;
+   
+}
