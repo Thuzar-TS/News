@@ -28,6 +28,8 @@
     color: #000;
     border: none;
     font-weight: bold;
+    width: 95px;
+    font-size: 12px;
 }
 .login-register-btn:hover, .login-register-btn:active, .login-register-btn:focus{
     background-color: transparent;
