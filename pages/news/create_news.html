@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../../css/sidebarstyle.css">
+    <link rel="stylesheet" href="../../css/setup.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper col-md-10 offset-md-1">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>My Page</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp; Search News List
+                    </a>
+                </li>
+                <li>
+                    <a href="create_news.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp; News Create
+                    </a>
+                </li>
+                <li>
+                    <a href="../users/users_list.html">
+                        <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp; Users
+                    </a>
+                </li>
+                <li>
+                    <a href="../categories/categories_list.html">
+                        <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp; Categories
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp; Ads
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp; Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="card  text-dark">
+                        <div class="card-body">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4 class="page-header">ニュース投稿を作成</h4>
+                                        <br>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>題名:<span class="error">*</span></label>
+                                            <input type="text" class="form-control" name="title" placeholder="題名を入力してください。">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="btn-group">
+                                            <button class="btn main-bg-color white dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    種類
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Doctor</a></li>
+                                                <li><a href="#">Nurse</a></li>
+                                                <li><a href="#">Pharmacist</a></li>
+                                                <li><a href="#">Administrative Staff</a></li>
+                                                <li><a href="#">Therapists</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br>
+                                            <label>内容:<span class="error">*</span></label>
+                                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10" placeholder="内容を入力してください。"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-sm-2 imgUp">
+                                            <br>
+                                            <label>メディア:<span class="error">*</span></label>
+                                            <br>
+                                            <a class="btn bg-color">
+                                                    写真/画像を投稿する
+                                                 <input type="file" class="uploadFile img" value="Upload Photo">
+                                             </a>
+                                            <div class="imagePreview"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <br>
+                                            <a href="news_list.html" class="btn main-bg-color white">ニュースを投稿する</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(".imgAdd").click(function() {
+            $(this).closest(".row").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+        });
+        $(document).on("click", "i.del", function() {
+            $(this).parent().remove();
+        });
+        $(function() {
+            $(document).on("change", ".uploadFile", function() {
+                var uploadFile = $(this);
+                var files = !!this.files ? this.files : [];
+                if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+                if (/^image/.test(files[0].type)) { // only image file
+                    var reader = new FileReader(); // instance of the FileReader
+                    reader.readAsDataURL(files[0]); // read the local file
+
+                    reader.onloadend = function() { // set image data as background of div
+                        //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+                        uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url(" + this.result + ")");
+                    }
+                }
+
+            });
+        });
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
