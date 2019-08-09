@@ -1,16 +1,23 @@
 /* style for individual page and overall */
+
+.form1{
+    border:1px solid#0f6064;
+    padding: 30px;
+    border-radius: 5px;
+}
 .txt
 {
     text-align:center;
-    background-color:grey;
+    background-color:#0f6064;
     padding: 20px;
     margin-bottom:2%;
     letter-spacing: 5px;
     color:white;
+    border-radius: 5px;
 }
 .box
 {
-    padding: 19px;
+    padding: 10px;
     /* border-bottom: 1px solid black;
     border-left: none;
     border-right: none;
@@ -20,7 +27,7 @@
 
 .con
 {
-    padding: 33px;
+    padding: 38px;
    
 }
 body {
