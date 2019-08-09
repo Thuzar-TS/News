@@ -1,1 +1,7 @@
 /* style for individual page and overall */
+
+/* News List */
+#content .news-post p {
+    font-size: 14px!important;
+}
+/* End News List */
