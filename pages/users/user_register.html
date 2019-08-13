@@ -15,16 +15,16 @@
   <title>News</title>
 </head>
 <body>
-  <div class="wrapper">  
+  <div class="wrapper col-md-10 offset-md-1">  
       
             <div class="container m-t-16 con">
                 <div class="row">
-                    <div class="col-md-6 offset-md-3" style="padding:3%; background-color: #86c4b6;border-radius: 8px;">
+                    <div class="col-md-8 offset-md-2">
                         <div class="txt">
                         <h5>ユーザー登録</h5>
                     </div>
                     
-                    <form action="#" class="m-t-16">
+                    <form action="#" class="m-t-16 form1">
                         <div class="form-group">
                           <!-- <label for="email">Company Name</label> -->
                           <input type="email" class="form-control box" id="email" placeholder="会社名" name="email">
@@ -34,9 +34,14 @@
                            <input type="text" class="form-control box" id="pwd" placeholder="タイプ" name="pswd">
                         </div>
 
-                        <div class="form-group">
-                            <label for="pwd" style="font-size:20px;">ロゴ</label>
-                            <input type="file" class="box" id="pwd" name="" style="border:none;">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">ロゴ</span>
+                            </div>
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="inputGroupFile01">
+                              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            </div>
                           </div>
 
                         <div class="form-group">
@@ -61,16 +66,16 @@
                         </div>
                          
                              
-                       <div class="form-group">
-                            <textarea style="width: 100%;padding: 25px;">住所</textarea>
+                        <div class="form-group">
+                            <textarea style="width: 100%;padding: 25px;" placeholder="住所"></textarea>
                        </div>
 
                        <div class="form-group">
-                            <textarea style="width: 100%;padding: 25px;">マット</textarea>
+                            <textarea style="width: 100%;padding: 25px;" placeholder="マット"></textarea>
                        </div>
         
-                        <button type="submit" class="btn btn-primary">アップロード</button>
-                        <a href="#" class="btn btn-danger">キャンセル</a>
+                       <button type="submit" class="btn main-bg-color white">アップロード</button>
+                       <button type="submit" class="btn btn-danger">キャンセル</button>
                       </form>
 
                     </div>
