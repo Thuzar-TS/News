@@ -146,6 +146,14 @@ body {
         .links a{
             color:#d2cfcf !important;
         }
+
+
+        .text{
+            color:#fff !important;
+            padding: 0px 0px 0px 240px;
+
+
+        }
 /* End Login */
 
 /* Search News List */
