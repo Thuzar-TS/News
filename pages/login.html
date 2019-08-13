@@ -64,7 +64,7 @@
 			$(document).ready(function(){
 				$('#getUser').click(function(){
 					var getUserName = $('#name').val();
-
+					//alert(getUserName);
 					if(getUserName == 'admin'){
 						localStorage.setItem(name,getUserName);
 						//localStorage.getItem(getUserName);
@@ -76,6 +76,7 @@
 					}
 					
 					else if(getUserName =='user'){
+						localStorage.setItem(name,getUserName);
 						var url = "http://localhost/News/pages/sample/news_list.html";
 						$(location).attr('href',url);
 					}
