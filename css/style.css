@@ -1,29 +1,10 @@
 /* style for individual page and overall */
 
 /* Profile */
-.page-header{
-    font-weight: bold;
-}
-
 .btn-editProfile{
     background: #0f6064;
     color: white;
 }
-
-label{
-    font-weight: bold;
-}
-
-.profile{
-    background-color:#86c4b6;
-}
-
-.profile-container{
-    padding: 70px;
-}
-/* .card-img-logo, .card-img-profile{
-    border: 1px solid #cdd3d4;
-} */
 /* End Profile */
 body {
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
