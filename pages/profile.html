@@ -32,25 +32,25 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#">
+                    <a href="news/news_list.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         Search News List
                     </a>                 
                 </li>
                 <li>
-                    <a href="create_news.html">
+                    <a href="news/create_news.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         News Create
                     </a>                                     
                 </li>
                 <li>
-                    <a href="../users/users_list.html">
+                    <a href="users/users_list.html">
                         <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp;
                         Users
                     </a>
                 </li>
                 <li>
-                    <a href="../categories/categories_list.html">
+                    <a href="categories/categories_list.html">
                         <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp;
                         Categories
                     </a>
@@ -122,7 +122,7 @@
                                     <br><br>
                                     <div class="form-group row">
                                         <div class="col-md-4">
-                                            <a href="http://localhost/News/pages/edit_profile.html" class="btn btn-default btn-editProfile">プロファイル編集</a>
+                                            <a href="edit_profile.html" class="btn btn-default btn-editProfile">プロファイル編集</a>
                                         </div>
                                     </div>
                                 </div>
@@ -166,19 +166,6 @@
                 $('#sidebar').toggleClass('active');
             });
         });
-
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $('#file-profile')
-                        .attr('src', e.target.result);
-                };
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
     </script>
 </body>
 
