@@ -1,6 +1,5 @@
 /* style for individual page and overall */
 
-
 body {
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     /* background: #dfdfde; */
@@ -21,6 +20,10 @@ body {
     color:white;
     border-radius: 5px;
 }
+.txt2
+{
+    letter-spacing: 3px;
+}
 .box
 {
     padding: 10px;
@@ -36,6 +39,10 @@ body {
     padding-top: 38px;
    
 }
+.img1
+{
+    margin-top: 21px;
+}
 
 #wrapper {
     /* background:  */
@@ -48,6 +55,10 @@ body {
     height: 100%;
 }
 
+.admin-sidebar, .user-sidebar {
+    display: none;
+}
+
 /* News List */
 #content {
     /* height: 800px; */
@@ -57,6 +68,13 @@ body {
     font-size: 14px;
 }
 /* End News List */
+
+/* Profile */
+.btn-editProfile{
+    background: #0f6064;
+    color: white;
+}
+/* End Profile */
 
 /* Login */
 		body,
@@ -340,6 +358,27 @@ body {
     left: 15px;
 }
 /* End Create News */
+
+/* Scroll Bar */
+#content::-webkit-scrollbar,
+  .scroll::-webkit-scrollbar {
+    width: 6px!important;
+    background: #f7f7f7 !important;
+  }
+   
+  #content::-webkit-scrollbar-track,
+  .scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)!important;     
+    border-radius: 0px!important;
+  }
+   
+  #content::-webkit-scrollbar-thumb,
+  .scroll::-webkit-scrollbar-thumb {    
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)!important; 
+    background-color: #d7d7d7!important;
+    border-radius: 0px!important;
+  }
+/* End Scroll Bar */
 /* News Tab */
 .news-wrapper{
     max-height: 500px;

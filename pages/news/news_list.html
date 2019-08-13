@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+    <title>News | Posts</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -25,14 +25,14 @@
 
     <div class="wrapper col-md-10 offset-md-1">
         <!-- Sidebar  -->
-        <nav id="sidebar">
+        <nav id="sidebar" class="admin-sidebar">
             <div class="sidebar-header">
                 <h3>Admin</h3>
             </div>
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#">
+                    <a href="news_list.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         Search News List
                     </a>                 
@@ -62,14 +62,46 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="logout">
                         <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
                         Logout
                     </a>
                 </li>
-            </ul>
+            </ul>            
+        </nav>
 
-            
+        <!-- User Sidebar -->
+        <nav id="sidebar" class="user-sidebar">
+            <div class="sidebar-header">
+                <h3>My Page</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="news_list.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        Search My News
+                    </a>                 
+                </li>
+                <li>
+                    <a href="create_news.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        News Create
+                    </a>                                     
+                </li>
+                <li>
+                    <a href="../profile.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        My Profile
+                    </a>                                     
+                </li>                
+                <li>
+                    <a href="#" class="logout">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Logout
+                    </a>
+                </li>
+            </ul>            
         </nav>
 
         <!-- Page Content  -->
@@ -150,10 +182,11 @@
                 </div>
             </div>           
         </div>
+         <!-- Page Content end  -->
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <!-- Popper.JS -->
     <script src="../../js/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
@@ -161,9 +194,32 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
+
+            var url = window.location.href;
+            var activePage = url;
+            // $('a').each(function () {
+            //     var linkPage = this.href;
+            //     if (activePage == linkPage) {
+            //         $('ul li').removeClass('active');
+            //         $(this).closest("li").addClass("active");
+            //     }
+            // });
+
+            if(localStorage.getItem(name) == "user"){
+                $(".user-sidebar").css("display","block");
+                $(".admin-sidebar").css("display","none");
+            }
+            else if(localStorage.getItem(name) == "admin"){
+                $(".user-sidebar").css("display","none");
+                $(".admin-sidebar").css("display","block");
+            }
+            $('.logout').click(function(){
+                //alert(localStorage.getItem(name));
+                localStorage.clear();
+                var url = "http://localhost/News/pages/login.html";
+				$(location).attr('href',url);
             });
+            
         });
     </script>
 </body>
