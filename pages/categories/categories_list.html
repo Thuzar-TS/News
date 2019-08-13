@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../../css/sidebarstyle.css">
+    <link rel="stylesheet" href="../../css/setup.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper col-md-10 offset-md-1">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        Search News List
+                    </a>                 
+                </li>
+                <li>
+                    <a href="create_news.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        News Create
+                    </a>                                     
+                </li>
+                <li>
+                    <a href="../users/users_list.html">
+                        <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp;
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="../categories/categories_list.html">
+                        <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp;
+                        Categories
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Ads
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Logout
+                    </a>
+                </li>
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="container">
+                <div class="card card-default m-b-20">
+                    
+                    <div class="card-body">
+                        <h4 class="main-color">ニュース記事を検索</h4>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" placeholder="検索">
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn main-bg-color white">検索</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="m-b-30">
+                        <a href="create_categories.html" class="btn main-bg-color white float-right">新しいカテゴリを作成</a>
+                    </div>
+           
+<!--card-->
+ <h4 class="page-header" style="text-align: center;">
+                
+        カテゴリーリスト
+            
+        </h4> 
+        <!--card-->
+        <div class="container-fuid">
+                <div class="card card-default m-b-20 m-t-22">
+                    
+                    <div class="card-body">
+                        
+                        <div class="row">
+                            <div class="col-md-10 m-t-8">
+                                <p>カテゴリー名: テスト</p>
+                            </div>
+                            <div class="col-md-2" style="margin-top: 8px;">
+                                <button class="btn main-bg-color white">検索</button>
+                                <button class="btn btn-warning">削除</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!--card_end-->
+
+                      <!--card-->
+        <div class="container-fuid">
+                <div class="card card-default m-b-20 m-t-22">
+                    
+                    <div class="card-body">
+                        
+                        <div class="row">
+                            <div class="col-md-10 m-t-8">
+                                <p>カテゴリー名: テスト</p>
+                            </div>
+                            <div class="col-md-2" style="margin-top: 8px;">
+                                <button class="btn main-bg-color white">検索</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!--card_end-->
+
+                      <!--card-->
+        <div class="container-fuid">
+                <div class="card card-default m-b-20 m-t-22">
+                    
+                    <div class="card-body">
+                        
+                        <div class="row">
+                            <div class="col-md-10 m-t-8">
+                                <p>カテゴリー名: テスト</p>
+                            </div>
+                            <div class="col-md-2" style="margin-top: 8px;">
+                                <button class="btn main-bg-color white">検索</button>
+                                <button class="btn btn-warning">削除</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!--card_end-->
+
+                    
+
+                    
+                    
+                
+
+
+            
+               
+            </div>           
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="../../js/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

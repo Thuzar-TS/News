@@ -8,6 +8,9 @@
     margin: 0px;
 }
 
+.m-t-8 {
+    margin-top:13px;
+}
 .m-lr-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -19,6 +22,12 @@
 
 .m-b-20 {
     margin-bottom: 20px;
+}
+.m-t-22{
+    margin-top: 22px;
+}
+.m-b-30{
+    margin-bottom: 30px;
 }
 
 .p-t-0 {

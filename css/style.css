@@ -1,6 +1,5 @@
 /* style for individual page and overall */
 
-
 body {
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     /* background: #dfdfde; */
@@ -21,6 +20,10 @@ body {
     color:white;
     border-radius: 5px;
 }
+.txt2
+{
+    letter-spacing: 3px;
+}
 .box
 {
     padding: 10px;
@@ -35,6 +38,10 @@ body {
 {
     padding-top: 38px;
    
+}
+.img1
+{
+    margin-top: 21px;
 }
 
 #wrapper {
@@ -57,6 +64,13 @@ body {
     font-size: 14px;
 }
 /* End News List */
+
+/* Profile */
+.btn-editProfile{
+    background: #0f6064;
+    color: white;
+}
+/* End Profile */
 
 /* Login */
 		body,
