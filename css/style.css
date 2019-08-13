@@ -326,7 +326,7 @@ body {
     margin-left: 15px;
 }
 .news-post {
-    background-color: #118063 !important;
+    /* background-color: #118063 !important; */
     color: white !important;
     position: relative;
     left: 15px;
