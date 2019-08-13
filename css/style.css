@@ -21,6 +21,10 @@ body {
     color:white;
     border-radius: 5px;
 }
+.txt2
+{
+    letter-spacing: 3px;
+}
 .box
 {
     padding: 10px;
@@ -35,6 +39,10 @@ body {
 {
     padding-top: 38px;
    
+}
+.img1
+{
+    margin-top: 21px;
 }
 
 #wrapper {
