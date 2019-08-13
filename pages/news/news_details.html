@@ -1,106 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="jp">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="../../css/bootstrap.min.css">
-  <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="../../css/style.css" type="text/css">
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="../../css/style.css" type="text/css">
+        <link rel="stylesheet" href="../../css/setup.css" type="text/css">
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-  <title>News</title>
-  <style>
-      .rounded{
-          width:500px;
-          height: auto;
-      }
-      .gallery img{
-        width:330px;
-        height:200px;
-          
-      }
-      .row{
-          padding:0 20px;
-          float: left;
-          width:35.9999999%;
-          
-      }
-      div.desc{
-          text-align: center;
-      }
-      
-    
-  </style>
-  }
-
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+                integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+                crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+                integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+                crossorigin="anonymous"></script>
+        <title>News</title>
 </head>
+
 <body>
-    <div class="container"> 
-        
-                <h1>News Details</h1><br/>
-                <img src="../../images/h1.jpg" class="rounded"> <br/><br/>
 
-                <h4>今日まで、そしてこれからも頑張ってくれる心と体へ、
-                        「人間ドック」という特別な日をプレゼントしませんか。
-                </h4>
-                <p>長い航海から帰ってきた船を点検・修理して、次の航海で事故が起こらないようにすることを「dock（ドック）」と言います。
-                    これが人間ドックの語源です。船と同じく私たち人間も、"健康長寿"という長い航海を続けるためには、定期的なメンテナンスが必要だと考えます。
+        <header class="navbar navbar-expand-lg fixed-top navbar-light main-header">
+                <a class="navbar-brand"><img src="../../images/news_search.png" alt=""></a>
+                <form class="form-inline container-fluid ">
+                        <input class="form-control col-lg mr-sm-2 d-flex p-2" type="search" placeholder="サーチ"
+                                aria-label="Search">
+                        <button class="btn my-2 my-sm-0 all-btn" type="submit">ウェブ検索</button>
+                </form>
+                <button type="button" class="btn mr-sm-2 d-flex login-register-btn">Login</button>
+                <button type="button" class="btn login-register-btn">Register</button>
+        </header>
+        <section class="main-content">
+                <div class="container-fluid -wrapper">
+                        <div class="row justify-content-md-center">                                
+                                <div class="col-md container">
+                                       
+                                        <img src="../../images/h3.jpg" width="100%" class="image-responsive" style="padding: 8px;">
+                                   
+                                    
+                                        
 
-                        いつまでも健康で、元気に、長生きするために、
-                        病気を早期発見・早期治療するために、 
-                        年に1度の人間ドックをお勧めします。
-                        
-                        当センターでは、MRIやヘリカルCT等の最新鋭の検査機器と医師をはじめとする専任スタッフの最先端の医療技術により、
-                        より精度の高い人間ドックを提供しています。
-                </p>
-                <p>
-                    私たちの笑顔を未来につなげるために、
-                        私たちは健康・環境・地球温暖化の 問題を一人一人が考え、
-                        できることから一つ一つ始めます。
-                        
-                        「美しい自然」を未来につなげるために。
-                        「健康な笑顔」を次の世代につなげるために。
-                        「やさしさ」をすべての方につなげるために。
-                </p>
-                    <div class="row">
-                      <div class="gallery">
-                            <a href="../../images/h1.jpg">
-                              <img src="../../images/h1.jpg">
-                            </a>
-                            <div class="desc">Realted News1</div>
+
+                                </div>
+                                                               
+                                <div class="col-md-auto">
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                                card title and make up the bulk of the card's content.
+                                                        </p>
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                </div>
+                                        </div>
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                                card title and make up the bulk of the card's content.
+                                                        </p>
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                </div>
+                                        </div>
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                                card title and make up the bulk of the card's content.
+                                                        </p>
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                </div>
+                                        </div>
+                                </div>
+
                         </div>
-                    </div>
-                    <div class="row">
-                            <div class="gallery">
-                                  <a href="../../images/h2.jpg">
-                                    <img src="../../images/h2.jpg">
-                                  </a>
-                                  <div class="desc">Realted News2</div>
-                              </div>
-                          </div>
-                          <div class="row">
-                                <div class="gallery">
-                                      <a href="../../images/h2.jpg">
-                                        <img src="../../images/h2.jpg">
-                                      </a>
-                                      <div class="desc">Realted News3</div>
-                                  </div>
-                            </div>       
-    </div>
+                </div >
 
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Bootstrap Js CDN -->
-    <script src="../js/bootstrap.min.js"></script>
-    
-    <script type="text/javascript">
-        $(document).ready(function () {
-            
-        });
-    </script>
-    
+        </section>
+
+     
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 off-set-3">
+                    
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="../../js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+                $(document).ready(function () {
+
+                });
+        </script>
+
 </body>
+
 </html>
