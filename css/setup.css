@@ -59,3 +59,18 @@
 .btn.focus, .btn:focus{
     box-shadow: none !important;
 }
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding-top: 0px !important;
+    padding-left: 9px !important;
+}
+.box-searchmap{
+    position: relative;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,.125);
+    background: #fff;
+    margin: 17px 0px;
+}
