@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../css/sidebarstyle.css">
+    <link rel="stylesheet" href="../css/setup.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper col-md-10 offset-md-1">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="admin-sidebar">
+            <div class="sidebar-header">
+                <h3>Admin</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="news/news_list.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        Search News List
+                    </a>                 
+                </li>
+                <li>
+                    <a href="news/create_news.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        News Create
+                    </a>                                     
+                </li>
+                <li>
+                    <a href="users/users_list.html">
+                        <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp;
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="categories/categories_list.html">
+                        <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp;
+                        Categories
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Ads
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Logout
+                    </a>
+                </li>
+            </ul>
+
+            
+        </nav>
+
+        <!-- User Sidebar -->
+        <nav id="sidebar" class="user-sidebar">
+            <div class="sidebar-header">
+                <h3>My Page</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="news/news_list.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        Search My News
+                    </a>                 
+                </li>
+                <li>
+                    <a href="news/create_news.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        News Create
+                    </a>                                     
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        My Profile
+                    </a>                                     
+                </li>                
+                <li>
+                    <a href="#" class="logout">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Logout
+                    </a>
+                </li>
+            </ul>            
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="card mb-3 bg-light text-dark">
+                <!-- <img src="../images/11.jpg" alt="Card image cap" width="100%" height="400px"> -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="../images/11.JPG" alt="Los Angeles" style="width:100%;">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../images/11.JPG" alt="Chicago" style="width:100%;">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../images/11.JPG" alt="New York" style="width:100%;">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <img class="card-img-logo" src="../images/news_search.png" alt="Card image" width="100%">
+                                    </div>                                               
+                                </div>
+                                            
+                                <div class="form-group row">
+                                    <p class="col-sm-4">会社名:</p>
+                                    <p class="col-sm-8">真実の成長</p>
+                                </div>
+                                <div class="form-group row">
+                                    <p class="col-sm-4">タイプ:</p>
+                                    <p class="col-sm-8">健康</p>
+                                </div>
+                                <div class="form-group row">
+                                        <p class="col-sm-4">メールアドレス:</p>
+                                        <p class="col-sm-8">www.truthgrowth.co.jp</p>
+                                    
+                                </div>
+                                <div class="form-group row">
+                                        <p class="col-sm-4">パスワード:</p>
+                                        <p class="col-sm-8">11111</p>
+                                    
+                                </div>
+                                <div class="form-group row">
+                                        <p class="col-sm-4">パスワードの確認:</p>
+                                        <p class="col-sm-8">11111</p>
+                                    
+                                </div>
+                                <div class="form-group row">
+                                        <p class="col-sm-4">電話番号:</p>
+                                        <p class="col-sm-8">09123456789</p>
+                                
+                                </div>
+                                <div class="form-group row">
+                                        <p class="col-sm-4">住所:</p>
+                                        <p class="col-sm-8">Tokyo, Japan..</p>
+                                
+                                </div>
+                                <br><br>
+                                <!-- <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <a href="edit_profile.html" class="btn btn-default btn-editProfile">プロファイル編集</a>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <div class="col-md-8"></div>
+                                    <div class="col-md-4">
+                                        <a href="edit_profile.html" class="btn main-bg-color white">プロファイル編集</a>
+                                    </div>                                               
+                                </div>
+                                            
+                                <div class="form-group row">
+                                    <p>私たちのこと:</p>
+                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+
+                                <div class="form-group row">
+                                    <p>モト:</p>
+                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="../js/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var url = window.location.href;
+            var activePage = url;
+            $('a').each(function () {
+                var linkPage = this.href;
+                if (activePage == linkPage) {
+                    $('ul li').removeClass('active');
+                    $(this).closest("li").addClass("active");
+                }
+            });
+
+            if(localStorage.getItem(name) == "user"){
+                $(".user-sidebar").css("display","block");
+                $(".admin-sidebar").css("display","none");
+            }
+            else if(localStorage.getItem(name) == "admin"){
+                $(".user-sidebar").css("display","none");
+                $(".admin-sidebar").css("display","block");
+            }
+            $('.logout').click(function(){
+                //alert(localStorage.getItem(name));
+                localStorage.clear();
+                var url = "http://localhost/News/pages/login.html";
+				$(location).attr('href',url);
+            });
+            
+        });
+    </script>
+</body>
+
+</html>

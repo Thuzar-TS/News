@@ -11,6 +11,14 @@
 .m-t-8 {
     margin-top:13px;
 }
+.m-lr-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.m-t-0 {
+    
+}
 
 .m-b-20 {
     margin-bottom: 20px;
@@ -25,7 +33,12 @@
 .p-t-0 {
     padding-top: 0px;
 }
-
+.p-t-5{
+    padding-top: 5px !important;
+}
+.p-b-5{
+    padding-bottom: 5px ;
+}
 
 .main-color {
     color: #333;
@@ -51,6 +64,8 @@
     color: #000;
     border: none;
     font-weight: bold;
+    width: 95px;
+    font-size: 12px;
 }
 .login-register-btn:hover, .login-register-btn:active, .login-register-btn:focus{
     background-color: transparent;
@@ -59,4 +74,48 @@
 }
 .btn.focus, .btn:focus{
     box-shadow: none !important;
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding-top: 0px !important;
+    padding-left: 9px !important;
+}
+.box-searchmap{
+    position: relative;
+    padding: 1rem .25rem;
+    border: 1px solid rgba(0,0,0,.125);
+    background: #fff;
+    margin: 17px 0px;
+    border-radius: .25rem;
+}
+.tab-content{
+    padding: .25rem !important;
+}
+.tab-card-header{
+    background-color: #118063;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border-color:transparent;
+}
+a:hover{
+    color: #000;
+}
+.nav-tabs .nav-item{
+    margin-bottom: -3px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    /* background-color: #fff;
+    border: #118063 #000 #fff; */
+    background-color: #2a9a7d;
+    border: none;
+    color: #fff;
+}
+.nav-item:hover{
+    background-color: transparent;
 }

@@ -1,6 +1,5 @@
 /* style for individual page and overall */
 
-
 body {
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     /* background: #dfdfde; */
@@ -56,6 +55,10 @@ body {
     height: 100%;
 }
 
+.admin-sidebar, .user-sidebar {
+    display: none;
+}
+
 /* News List */
 #content {
     /* height: 800px; */
@@ -65,6 +68,13 @@ body {
     font-size: 14px;
 }
 /* End News List */
+
+/* Profile */
+.btn-editProfile{
+    background: #0f6064;
+    color: white;
+}
+/* End Profile */
 
 /* Login */
 		body,
@@ -249,15 +259,14 @@ p {
 }
 .main-header{
     background-color: #b7dad2;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
 }
-.main-content{
-    margin-left: 100px;
-    margin-right: 100px;
-    /* box-shadow: 0 1px 5px 0 rgba(0,0,0,0.37); */
-    box-shadow: 0px 1px 5px 0px #ccc;
-    height:100%;
+.main-content{    
+    background: #fff;
+    padding: 0px;
+    box-shadow: 0px 1px 5px 0px #ccc!important;
+    height: 100%;
 }
 .main-wrapper{
     padding: 100px 20px 20px 20px;
@@ -349,3 +358,70 @@ body {
     left: 15px;
 }
 /* End Create News */
+
+/* Scroll Bar */
+#content::-webkit-scrollbar,
+  .scroll::-webkit-scrollbar {
+    width: 6px!important;
+    background: #f7f7f7 !important;
+  }
+   
+  #content::-webkit-scrollbar-track,
+  .scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)!important;     
+    border-radius: 0px!important;
+  }
+   
+  #content::-webkit-scrollbar-thumb,
+  .scroll::-webkit-scrollbar-thumb {    
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)!important; 
+    background-color: #d7d7d7!important;
+    border-radius: 0px!important;
+  }
+/* End Scroll Bar */
+/* News Tab */
+.news-wrapper{
+    max-height: 500px;
+    min-height: 200px;
+    overflow-y: auto;
+}
+.news-wrapper a:hover{
+    text-decoration: none;
+}
+/* .news-wrapper >a:first-child{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 2.1rem;
+    padding: 0;
+    vertical-align: top;
+    width: 30rem;
+} */
+.news-wrapper >a:first-child>img {
+    height: 19.4rem;
+}
+.source-title{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.538;
+    text-transform: uppercase;
+    color: #000;
+    margin: 12px 0;
+}
+.source-subtitle{
+    font-size: 12px;
+    color: #969798;
+    font-weight: 300;
+}
+.source-subtitle img{
+    margin-right: 11px;
+    vertical-align: bottom;
+}
+.source-img{
+    width: 25.6px;
+    height: 25.6px;
+}
+.source-img-small{
+    font-size: 14px;
+    color: #000000;
+}
+/*End News Tab*/

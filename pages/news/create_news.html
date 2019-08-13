@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+    <title>News | Create</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -24,7 +24,7 @@
 <body>
     <div class="wrapper col-md-10 offset-md-1">
         <!-- Sidebar  -->
-        <nav id="sidebar">
+        <nav id="sidebar" class="admin-sidebar">
             <div class="sidebar-header">
                 <h3>Admin</h3>
             </div>
@@ -32,36 +32,77 @@
             <ul class="list-unstyled components">
                 <li>
                     <a href="news_list.html">
-                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp; Search News List
-                    </a>
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        Search News List
+                    </a>                 
                 </li>
                 <li class="active">
                     <a href="create_news.html">
-                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp; News Create
-                    </a>
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        News Create
+                    </a>                                     
                 </li>
                 <li>
                     <a href="../users/users_list.html">
-                        <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp; Users
+                        <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp;
+                        Users
                     </a>
                 </li>
                 <li>
                     <a href="../categories/categories_list.html">
-                        <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp; Categories
+                        <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp;
+                        Categories
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp; Ads
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Ads
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp; Logout
+                    <a href="#" class="logout">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Logout
                     </a>
                 </li>
-            </ul>
+            </ul>            
         </nav>
+
+        <!-- User Sidebar -->
+        <nav id="sidebar" class="user-sidebar">
+            <div class="sidebar-header">
+                <h3>My Page</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="news_list.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        Search My News
+                    </a>                 
+                </li>
+                <li>
+                    <a href="create_news.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        News Create
+                    </a>                                     
+                </li>
+                <li>
+                    <a href="../profile.html">
+                        <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
+                        My Profile
+                    </a>                                     
+                </li>                
+                <li>
+                    <a href="#" class="logout">
+                        <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
+                        Logout
+                    </a>
+                </li>
+            </ul>            
+        </nav>
+
         <!-- Page Content  -->
         <div id="content">
             <div class="container">
@@ -162,6 +203,38 @@
         $(document).ready(function() {
             $('#content').height(($(document).height()-200)+"px");
         });
+
+       
+        var url = window.location.href;
+       console.log(url);
+        var activePage = url;
+        // $('a').each(function () {
+        //     var linkPage = this.href;
+        //     console.log(linkPage);
+        //     if (linkPage == linkPage) {
+        //         $('ul li').removeClass('active');
+        //         $(this).closest("li").addClass("active");
+        //     }else{
+        //         console.log('1');
+        //     }
+        // });
+
+        if(localStorage.getItem(name) == "user"){
+            $(".user-sidebar").css("display","block");
+            $(".admin-sidebar").css("display","none");
+        }
+        else if(localStorage.getItem(name) == "admin"){
+            $(".user-sidebar").css("display","none");
+            $(".admin-sidebar").css("display","block");
+        }
+        $('.logout').click(function(){
+            //alert(localStorage.getItem(name));
+            localStorage.clear();
+            var url = "http://localhost/News/pages/login.html";
+            $(location).attr('href',url);
+        });
+
+        
     </script>
 </body>
 
