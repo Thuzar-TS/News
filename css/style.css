@@ -55,6 +55,10 @@ body {
     height: 100%;
 }
 
+.admin-sidebar, .user-sidebar {
+    display: none;
+}
+
 /* News List */
 #content {
     /* height: 800px; */
