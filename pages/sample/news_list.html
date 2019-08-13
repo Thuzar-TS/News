@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" id="logout">
                         <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
                         Logout
                     </a>
@@ -163,6 +163,12 @@
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
+            });
+            $('#logout').click(function(){
+                //alert(localStorage.getItem(name));
+                localStorage.clear();
+                var url = "http://localhost/News/pages/login.html";
+				$(location).attr('href',url);
             });
         });
     </script>

@@ -63,20 +63,20 @@
 		<script>
 			$(document).ready(function(){
 				$('#getUser').click(function(){
-					var name = $('#name').val();
-					var password = $('#password').val();
-					if(name == 'admin' && password == 'admin'){
-						var url = "http://localhost/News/pages/index.html";
+					var getUserName = $('#name').val();
+
+					if(getUserName == 'admin'){
+						localStorage.setItem(name,getUserName);
+						//localStorage.getItem(getUserName);
+						var url = "http://localhost/News/pages/news/news_list.html";
 						$(location).attr('href',url);
 					}
-					else if(name == '' && password == ''){
+					else if(getUserName == ''){
 						alert('plz insert username and password')
 					}
-					else if(name != null && password ==''){
-						alert('plz insert password');
-					}
-					else if(name =='user' && password == 'user'){
-						var url = "http://localhost/News/pages/news/search_news_result.html";
+					
+					else if(getUserName =='user'){
+						var url = "http://localhost/News/pages/sample/news_list.html";
 						$(location).attr('href',url);
 					}
 					else{
