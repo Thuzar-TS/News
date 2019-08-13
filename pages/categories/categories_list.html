@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<<<<<<< HEAD
-    <title>Collapsible sidebar using Bootstrap 4</title>
-=======
     <title>News | Posts</title>
->>>>>>> 38101a5408e200c1a07e8425c55efa62197eb44d
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -29,21 +25,13 @@
 
     <div class="wrapper col-md-10 offset-md-1">
         <!-- Sidebar  -->
-<<<<<<< HEAD
-        <nav id="sidebar">
-=======
         <nav id="sidebar" class="admin-sidebar">
->>>>>>> 38101a5408e200c1a07e8425c55efa62197eb44d
             <div class="sidebar-header">
                 <h3>Admin</h3>
             </div>
 
             <ul class="list-unstyled components">
-<<<<<<< HEAD
                 <li>
-=======
-                <li class="active">
->>>>>>> 38101a5408e200c1a07e8425c55efa62197eb44d
                     <a href="../news/news_list.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         Search News List
@@ -226,13 +214,13 @@
 
             var url = window.location.href;
             var activePage = url;
-            $('a').each(function () {
-                var linkPage = this.href;
-                if (activePage == linkPage) {
-                    $('ul li').removeClass('active');
-                    $(this).closest("li").addClass("active");
-                }
-            });
+            // $('a').each(function () {
+            //     var linkPage = this.href;
+            //     if (activePage == linkPage) {
+            //         $('ul li').removeClass('active');
+            //         $(this).closest("li").addClass("active");
+            //     }
+            // });
 
             if(localStorage.getItem(name) == "user"){
                 $(".user-sidebar").css("display","block");
