@@ -429,6 +429,13 @@ body {
     border-radius: 0px!important;
   }
 /* End Scroll Bar */
+/*Job Apply Form*/
+.container_jobs{
+    height: 800px;
+    float: left;
+    overflow-y:scroll;
+}
+/* End Job Apply Form*/
 /* News Tab */
 .news-wrapper{
     height: 400px;

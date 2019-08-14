@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="jp">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>News | Create</title>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="../../css/style.css" type="text/css">
+        <link rel="stylesheet" href="../../css/setup.css" type="text/css">
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../../css/sidebarstyle.css">
-    <link rel="stylesheet" href="../../css/setup.css">
-    <link rel="stylesheet" href="../../css/style.css">
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+                integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+                crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+                integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+                crossorigin="anonymous"></script>
+        <title>News</title>
 </head>
 
 <body>
@@ -30,47 +29,88 @@
                                 aria-label="Search">
                         <button class="btn my-2 my-sm-0 all-btn" type="submit">ウェブ検索</button>
                 </form>
-                <a href="login.html" class="btn login-register-btn">サインイン</a>
-                <a href="../users/user_register.html" class="btn login-register-btn">登録</a>
+                <a href="../login.html" class="btn login-register-btn">サインイン</a>
+                <a href="../../pages/users/user_register.html" class="btn login-register-btn">登録</a>
         </header>
         <section class="main-content">
                 <div class="container-fluid main-wrapper">
                         <div class="row justify-content-md-center">
-                                <div class="col-md container">
-                                     
-                                    <div class="col-md-6">
-                                            <h4 class="page-header">Job Apply Form</h4>
-                                    </div>
-                                    <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Company:<span class="error">*</span></label>
-                                                <input type="text" class="form-control" name="title" placeholder="Please enter company name">
+                                <div class="col-md container_jobs">
+                                    <div class="container m-t-16">
+                                        <div class="row">
+                                            <div class="col-md-8 offset-md-2">
+                                                <div class="txt">
+                                                <h4>ジョブアプリケーションフォーム</h4>
+                                            </div>
+
+                                            <form action="#" class="m-t-16 form1">
+                                                    <div class="form-group">
+                                                            <label for="form_ID">Job ID</label>
+                                                            <input type="text" class="form-control box" id="jobid" placeholder="IDを入力してください" name="jobid" autofocus >
+                                                        </div>
+                                                <div class="form-group">
+                                                    <label for="form_name">Name</label>
+                                                    <input type="text" class="form-control box" id="email" placeholder="名前を入力してください" name="name">
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="form_email">Email Address</label>
+                                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="メールアドレスを入力してください" >
+                                                    </div>
+                                                
+                                                    <div class="form-group">
+                                                        <label for="form_phone">Phone Number</label> 
+                                                        <input type="text" class="form-control box" id="phone" placeholder="電話番号を入力してください" name="phone" >
+                                                    </div>
+                                                    <div class="form-group">
+                                                            <label for="form_address">Address</label> 
+                                                            <input type="text" class="form-control box" id="address" placeholder="住所を入力してください" name="address" >
+                                                        </div>
+    
+                                                   <div class="form-group">
+                                                        <label for="content">Content of enquiry</label> 
+                                                        <textarea rows="8" cols="30" style="width: 100%;padding:5px;" placeholder="お問い合わせ内容を入力してください"></textarea>
+                                                   </div>
+                                                   <div class="form-group">
+                                                        <label for="form_comp">Company Name</label>
+                                                          <input type="text" class="form-control box" id="comp" placeholder="会社名を入力してください" name="comp" >
+                                                        </div>
+                                                
+                                                        <div class="form-group">
+                                                            <label for="form_need">Require occupations</label>
+                                                            <select id="form_need" name="need" class="form-control" data-error="Please specify your need.">
+                                                                <option value="">please select job catagory</option>
+                                                                <option value="Doctor">Doctor</option>
+                                                                <option value="Nurse">Nurse</option>
+                                                                <option value="pharmacists">Pharmacists</option>
+                                                                <option value="health professionals">Health Professionals</option>
+                                                                <option value="Other">Other Hospital Staff</option>
+                                                            </select>
+            
+                                                        </div>
+                                            
+
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                          <label class="custom-file-label" for="inputGroupFile01">Choose File</label>
+                                                    </div>
+                                                  </div>
+
+                                                <br/>
+                                                <div class="text-center"> 
+                                                    <a href="../index.html" class="btn main-bg-color white">仕事に応募する</a>
+                                                </div>
+                                               
+                                              </form>
+
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_need">Please specify your need *</label>
-                                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                                        <option value=""></option>
-                                                        <option value="Request quotation">Request quotation</option>
-                                                        <option value="Request order status">Request order status</option>
-                                                        <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                                        <option value="Other">Other</option>
-                                                    </select>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-                                    
-                                        </br>
-                                            <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="form_email">Email *</label>
-                                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                                        <div class="help-block with-errors"></div>
-                                                    </div>  
-                                            </div>       
+                                    </div>
                                 </div>
-                                
+
 
                                 <div class="col-md-auto">
                                         <div class="card m-b-10" style="width: 18rem;">
