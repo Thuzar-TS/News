@@ -58,6 +58,8 @@
     background-color: #f5a750;
     color: #fff;
     border:none;
+    min-width: 100px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 }
 .login-register-btn{
     background-color: transparent;
@@ -140,9 +142,10 @@ a:hover{
 }
 .breadcrumb-item > a{
      color: #6c757d;
+     font-weight: bold;
 }
 .breadcrumb-item.active {
-    color: #6c757d;
+    color: #f16c00;
     font-weight: bold;
 }
 .breadcrumb-item+.breadcrumb-item::before {
