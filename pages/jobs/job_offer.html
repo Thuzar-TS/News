@@ -11,9 +11,9 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../css/sidebarstyle.css">
-    <link rel="stylesheet" href="../css/setup.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/sidebarstyle.css">
+    <link rel="stylesheet" href="../../css/setup.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -32,25 +32,25 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="../pages/news/news_list.html">
+                    <a href="../news/news_list.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         ニュース一覧の検索 
                     </a>                 
                 </li>
                 <li>
-                    <a href="../pages/news/create_news.html">
+                    <a href="../news/create_news.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         ニュース作成
                     </a>                                     
                 </li>
                 <li>
-                    <a href="../pages/users/users_list.html">
+                    <a href="../users/users_list.html">
                         <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp;
                         ユーザー
                     </a>
                 </li>
                 <li>
-                    <a href="../pages/categories/categories_list.html">
+                    <a href="../categories/categories_list.html">
                         <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp;
                         カテゴリー
                     </a>
@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../pages/job_offer_list.html" class="logout">
+                    <a href="../jobs/job_offer_list.html">
                         <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
                        Job Offer
                     </a>
@@ -84,19 +84,19 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="../pages/news/news_list.html">
+                    <a href="../news/news_list.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         自分のニュースの検索
                     </a>                 
                 </li>
                 <li>
-                    <a href="../pages/news/create_news.html">
+                    <a href="../news/create_news.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         ニュース作成
                     </a>                                     
                 </li>
                 <li>
-                    <a href="../pages/profile.html">
+                    <a href="../profile.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         プロフィール
                     </a>                                     
@@ -194,7 +194,7 @@
                         <div class="col-sm-3">         
                         </div>
                         <div class="col-sm-8">
-                             <button type = "button" class="btn btn-md main-bg-color white"> Submit </button>
+                             <button type = "button" class="btn btn-md main-bg-color white" id = "submit"> Submit </button>
                         </div>   
                      </div>   
                 </div>
@@ -236,6 +236,11 @@
                 //alert(localStorage.getItem(name));
                 localStorage.clear();
                 var url = "http://localhost/News/pages/login.html";
+				$(location).attr('href',url);
+            });
+
+            $('#submit').click(function(){
+                var url = "http://localhost/News/pages/jobs/job_offer_list.html";
 				$(location).attr('href',url);
             });
             
