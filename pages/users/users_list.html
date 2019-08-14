@@ -61,8 +61,8 @@
                         広告
                     </a>
                 </li>
-                <li class="active">
-                    <a href="job_list.html" >
+                <li>
+                    <a href="../../pages/job_offer_list.html" >
                         <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
                         Job Offer
                     </a>
@@ -101,8 +101,8 @@
                         プロフィール
                     </a>                                     
                 </li>
-                <li class="active">
-                    <a href="job_list.html" >
+                <li>
+                    <a href="../../pages/job_offer_list.html" >
                         <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
                         Job Offer
                     </a>
@@ -222,15 +222,15 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            var url = window.location.href;
-            var activePage = url;
-            $('a').each(function () {
-                var linkPage = this.href;
-                if (activePage == linkPage) {
-                    $('ul li').removeClass('active');
-                    $(this).closest("li").addClass("active");
-                }
-            });
+            // var url = window.location.href;
+            // var activePage = url;
+            // $('a').each(function () {
+            //     var linkPage = this.href;
+            //     if (activePage == linkPage) {
+            //         $('ul li').removeClass('active');
+            //         $(this).closest("li").addClass("active");
+            //     }
+            // });
 
             if(localStorage.getItem(name) == "user"){
                 $(".user-sidebar").css("display","block");
