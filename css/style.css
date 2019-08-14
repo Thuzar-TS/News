@@ -276,11 +276,13 @@ div.scroll2
         }
         .p_3
         {
-            padding: 22px;
-            margin-top: 22px;
-            font-size: 15px;
+            /* padding: 22px; */
+            /* margin-top: 22px; */
+            font-size: 13px;
             letter-spacing: 2px;
             text-align: justify;
+            color: white;
+           
         }
 
         .h_4
@@ -290,6 +292,15 @@ div.scroll2
             font-weight:bold;
             letter-spacing: 3px;
         }
+        .m-l-14
+        {
+            margin-left: -12px;
+        }
+        .fit-image2{
+            width: 350px;
+            object-fit: cover;
+            height: 300px; /* only if you want fixed height */
+            }
 /*end_new_details*/
 
 p {
