@@ -150,7 +150,12 @@ body {
 
         .text{
             color:#fff !important;
-            padding: 0px 0px 0px 240px;
+            /* padding: 0px 0px 0px 240px; */
+            position: relative;
+            float: right;
+           
+
+
 
 
         }

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>News | Posts</title>
+    <title>Jobs | List</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../../css/sidebarstyle.css">
-    <link rel="stylesheet" href="../../css/setup.css">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/sidebarstyle.css">
+    <link rel="stylesheet" href="../css/setup.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -31,26 +31,26 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="news_list.html">
+                <li>
+                    <a href="../pages/news/news_list.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         ニュース一覧の検索
                     </a>                 
                 </li>
                 <li>
-                    <a href="create_news.html">
+                    <a href="news/create_news.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         ニュース作成
                     </a>                                     
                 </li>
                 <li>
-                    <a href="../users/users_list.html">
+                    <a href="../pages/users/users_list.html">
                         <i class="fas fa-image"></i>&nbsp;&nbsp;&nbsp;
                         ユーザー
                     </a>
                 </li>
                 <li>
-                    <a href="../categories/categories_list.html">
+                    <a href="../pages/categories/categories_list.html">
                         <i class="fas fa-question"></i>&nbsp;&nbsp;&nbsp;
                         カテゴリー
                     </a>
@@ -61,8 +61,8 @@
                         広告
                     </a>
                 </li>
-                <li>
-                    <a href="../job_list.html" >
+                <li class="active">
+                    <a href="../pages/job_list.html" >
                         <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
                         Job Offer
                     </a>
@@ -73,7 +73,6 @@
                         ログアウト
                     </a>
                 </li>
-                
             </ul>            
         </nav>
 
@@ -84,7 +83,7 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
+                <li >
                     <a href="news_list.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         自分のニュースの検索
@@ -97,17 +96,17 @@
                     </a>                                     
                 </li>
                 <li>
-                    <a href="../profile.html">
+                    <a href="../pages/profile.html">
                         <i class="fas fa-briefcase"></i>&nbsp;&nbsp;&nbsp;
                         プロフィール
                     </a>                                     
-                </li>
-                <li>
-                    <a href="../job_list.html" >
+                </li> 
+                <li class="active">
+                    <a href="job_list.html" >
                         <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
                         Job Offer
                     </a>
-                </li>             
+                </li>               
                 <li>
                     <a href="#" class="logout">
                         <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;
@@ -123,13 +122,14 @@
                 <div class="card card-default m-b-20">
                     
                     <div class="card-body">
-                        <h4 class="main-color">ニュースポストの検索</h4>
+                        <h4 class="main-color">Search for Jobs</h4>
                         <div class="row">
-                            <div class="col-md-10">
+                            <div class="col-md-8">
                                 <input type="text" class="form-control" placeholder="検索">
                             </div>
-                            <div class="col-md-2">
-                                <button class="btn main-bg-color white">検索</button>
+                            <div class="col-md-4">
+                                <button class="btn  main-bg-color white">検索</button>
+                                <button class="btn btn-info white float-right admin-sidebar">Create Job</button>
                             </div>
                         </div>
                     </div>
@@ -140,10 +140,10 @@
                     <div class="card-body news-post">
                         <div class="row">
                                 <div class="col-md-2">
-                                    <img src="../../images/1.jpg" class="col-md-12" alt="">
+                                    <img src="../images/1.jpg" class="col-md-12" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <a href="../news/news_details.html"><h6>これはニュースタイトルです </a> <small class="float-right">編集 &nbsp; 削除</small> </h6>
+                                    <a href="../news/news_details.html"><h6>これはニュースタイトルです </a> <small class="float-right admin-sidebar">編集 &nbsp; 削除</small> </h6>
                                     <p>Lorem Ipsumは、紀元前45年に書かれたCiceroの（善と悪の極限）のセクション1.10.32と1.10.33から来ています。 この本は、ルネサンス時代に非常に人気のある、倫理理論に関する論文です。</p>
                                 </div>
                         </div>                        
@@ -153,10 +153,10 @@
                     <div class="card-body news-post">
                         <div class="row">
                                 <div class="col-md-2">
-                                    <img src="../../images/2.png" class="col-md-12" alt="">
+                                    <img src="../images/2.png" class="col-md-12" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <a href="../news/news_details.html"><h6>これはニュースタイトルです </a> <small class="float-right">編集 &nbsp; 削除</small> </h6>
+                                    <a href="../news/news_details.html"><h6>これはニュースタイトルです </a> <small class="float-right admin-sidebar">編集 &nbsp; 削除</small> </h6>
                                     <p>Lorem Ipsumは、紀元前45年に書かれたCiceroの（善と悪の極限）のセクション1.10.32と1.10.33から来ています。 この本は、ルネサンス時代に非常に人気のある、倫理理論に関する論文です。</p>
                                 </div>
                         </div>                        
@@ -167,10 +167,10 @@
                     <div class="card-body news-post">
                         <div class="row">
                                 <div class="col-md-2">
-                                    <img src="../../images/3.png" class="col-md-12" alt="">
+                                    <img src="../images/3.png" class="col-md-12" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                    <a href="../news/news_details.html"><h6>これはニュースタイトルです </a> <small class="float-right">編集 &nbsp; 削除</small> </h6>
+                                    <a href="../news/news_details.html"><h6>これはニュースタイトルです </a> <small class="float-right admin-sidebar">編集 &nbsp; 削除</small> </h6>
                                     <p>Lorem Ipsumは、紀元前45年に書かれたCiceroの（善と悪の極限）のセクション1.10.32と1.10.33から来ています。 この本は、ルネサンス時代に非常に人気のある、倫理理論に関する論文です。</p>
                                 </div>
                         </div>                        
@@ -180,10 +180,10 @@
                     <div class="card-body news-post">
                         <div class="row">
                                 <div class="col-md-2">
-                                    <img src="../../images/4.png" class="col-md-12" alt="">
+                                    <img src="../images/4.png" class="col-md-12" alt="">
                                 </div>
                                 <div class="col-md-10">
-                                   <a href="../news/news_details.html"><h6>これはニュースタイトルです</a> <small class="float-right">編集 &nbsp; 削除</small> </h6>
+                                   <a href="news/news_details.html"><h6>これはニュースタイトルです</a> <small class="float-right admin-sidebar">編集 &nbsp; 削除</small> </h6>
                                     <p>Lorem Ipsumは、紀元前45年に書かれたCiceroの（善と悪の極限）のセクション1.10.32と1.10.33から来ています。 この本は、ルネサンス時代に非常に人気のある、倫理理論に関する論文です。</p>
                                 </div>
                         </div>                        
@@ -204,10 +204,12 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-            var url = window.location.href;
-            var activePage = url;
+            // var url = window.location.href;
+            // var activePage = url;
+            // console.log(activePage);
             // $('a').each(function () {
             //     var linkPage = this.href;
+            //     console.log(linkPage);
             //     if (activePage == linkPage) {
             //         $('ul li').removeClass('active');
             //         $(this).closest("li").addClass("active");
