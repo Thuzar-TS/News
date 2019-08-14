@@ -150,3 +150,13 @@ a:hover{
     content: ">" !important;
 }
 /*end for breadcrumb*/
+/*footer*/
+.footer{
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: transparent;
+    text-align: center; 
+    line-height: 20px; 
+   
+}
