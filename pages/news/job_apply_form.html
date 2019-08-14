@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>News | Create</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../../css/sidebarstyle.css">
+    <link rel="stylesheet" href="../../css/setup.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <div class="main-content col-md-10 offset-md-1">
+        <header class="navbar navbar-expand-lg fixed-top navbar-light main-header col-md-10 offset-md-1">
+                <a class="navbar-brand"><img src="../../images/news_search.png" alt=""></a>
+                <form class="form-inline container-fluid ">
+                        <input class="form-control col-lg mr-sm-2 d-flex p-2" type="search" placeholder="サーチ"
+                                aria-label="Search">
+                        <button class="btn my-2 my-sm-0 all-btn" type="submit">ウェブ検索</button>
+                </form>
+                <a href="login.html" class="btn login-register-btn">サインイン</a>
+                <a href="../users/user_register.html" class="btn login-register-btn">登録</a>
+        </header>
+        <section class="main-content">
+                <div class="container-fluid main-wrapper">
+                        <div class="row justify-content-md-center">
+                                <div class="col-md container">
+                                     
+                                    <div class="col-md-6">
+                                            <h4 class="page-header">Job Apply Form</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Company:<span class="error">*</span></label>
+                                                <input type="text" class="form-control" name="title" placeholder="Please enter company name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_need">Please specify your need *</label>
+                                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                        <option value=""></option>
+                                                        <option value="Request quotation">Request quotation</option>
+                                                        <option value="Request order status">Request order status</option>
+                                                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                    
+                                        </br>
+                                            <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_email">Email *</label>
+                                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>  
+                                            </div>       
+                                </div>
+                                
+
+                                <div class="col-md-auto">
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title text-center">Advertisement</h5>
+                                                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                                                        <img src="../../images/company-profile1.png" alt=""
+                                                                class="img-responsivie" style="width:100%">
+                                                </div>
+                                        </div>
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title text-center">Advertisement</h5>
+                                                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                                                        <img src="../../images/logo_japanese_horizontal.png" alt=""
+                                                                class="img-responsivie" style="width:100%">
+                                                </div>
+                                        </div>
+                                        <div class="card m-b-10" style="width: 18rem;">
+                                                <div class="card-body">
+                                                        <h5 class="card-title text-center">Advertisement</h5>
+                                                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                                                        <img src="../../images/company-profile1.png" alt=""
+                                                                class="img-responsivie" style="width:100%">
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                </div>
+
+        </section>
+</div>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="../../js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+                $(document).ready(function () {
+                        $('.js-example-basic-multiple').select2();
+                });
+
+
+        </script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+
+
+
+</body>
+
+</html>
