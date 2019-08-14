@@ -6,7 +6,7 @@ body {
     background: #edfffa;
 }
 .form1{
-    border:1px solid#118063;
+    /* border:1px solid#118063; */
     padding: 30px;
     border-radius: 5px;
 }
@@ -23,6 +23,17 @@ body {
 .txt2
 {
     letter-spacing: 3px;
+}
+
+.txt3
+{
+    text-align:center;
+    background-color:#118063;
+    padding: 15px;
+    letter-spacing: 5px;
+    color:white;
+    border-radius: 5px;
+    margin-top: 10%;
 }
 .box
 {
@@ -324,6 +335,21 @@ div.scroll2
             margin-right: 15px;
         }
           
+        .search1
+        {
+            margin-left:75%;
+            margin-top:-30px;
+        }
+        .input_height
+        {
+            height:38px;
+        }
+        .input_p
+        {
+            position: absolute;
+            margin-left:10px;
+            height:38px;
+        }
 /*end_new_details*/
 
 p {
@@ -353,6 +379,7 @@ p {
 .error {
     color: #FF0000;
 }
+
 
 body {
     background-color: #f5f5f5;
