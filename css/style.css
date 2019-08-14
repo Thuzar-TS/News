@@ -251,16 +251,58 @@ body {
         border-right: 1px solid #fff;
     }
     div.scroll{
-        height:800PX;
+        height:800px;
         float: left;
         overflow-y:scroll;
         }
+
+   
 /* End Search News List */
 
+/*new_details*/
+div.scroll2
+        {
+        height:700px;
+        float: left;
+        overflow-y:scroll;
+        }
+
+        .img_2
+        {
+            margin-left: 10%;
+            /* border:1px solid black; */
+        }
+
+        .p_2
+        {
+            padding:22px;
+            margin-right: 2%;
+            margin-top:22px;
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-align: justify;
+        }
+        .p_3
+        {
+            padding: 22px;
+            margin-top: 22px;
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-align: justify;
+        }
+
+        .h_4
+        {
+            text-align: center;
+            padding:12px;
+            font-weight:bold;
+            letter-spacing: 3px;
+        }
+/*end_new_details*/
 
 p {
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.7em;
     color: #000;
