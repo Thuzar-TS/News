@@ -127,8 +127,16 @@ body {
 			outline: 0px !important;
 		}
 		.login_container {
-			padding: 0 2rem;
-		}
+            padding: 0 5rem;
+            
+        }
+        .width{
+            width: 280px;
+        }
+        .d-margin{
+            font-size: 12px;
+            margin-bottom: 70px;
+        }
 		.input-group-text {
 			background: #4db197 !important;
 			color: white !important;
@@ -150,7 +158,12 @@ body {
 
         .text{
             color:#fff !important;
-            padding: 0px 0px 0px 240px;
+            /* padding: 0px 0px 0px 240px; */
+            position: relative;
+            float: right;
+           
+
+
 
 
         }
@@ -254,6 +267,7 @@ body {
         height:800px;
         float: left;
         overflow-y:scroll;
+        scrollbar-width: thin;
         }
 
    
