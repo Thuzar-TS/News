@@ -138,7 +138,7 @@ body {
 			outline: 0px !important;
 		}
 		.login_container {
-            padding: 0 5rem;
+            padding: 0 2.5rem;
             
         }
         .width{
@@ -278,13 +278,13 @@ body {
         height:700px;
         float: left;
         overflow-y:auto;
-        /* scrollbar-width: thin; */
+        scrollbar-width: thin;
         }
     div.scroll{
         height:765px;
         float: left;
         overflow-y:auto;
-        /* scrollbar-width: thin; */
+        scrollbar-width: thin;
         }
    
 
