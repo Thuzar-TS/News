@@ -54,8 +54,10 @@
 .m-b-10{
     margin-bottom: 10px;
 }
-.all-btn{
+.secondary-bg-color{
     background-color: #f5a750;
+}
+.all-btn{
     color: #fff;
     border:none;
     min-width: 100px;
@@ -156,8 +158,8 @@ a:hover{
 /*footer*/
 .footer{
     font-size: 12px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
     background: transparent;
     text-align: center; 
     line-height: 20px; 
