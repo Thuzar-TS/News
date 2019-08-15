@@ -502,11 +502,7 @@ body {
   }
 /* End Scroll Bar */
 /*Job Apply Form*/
-.scroll3{
-    height: 800px;
-    float: left;
-    overflow-y:auto;
-}
+
 /* End Job Apply Form*/
 /* News Tab */
 .news-wrapper{
@@ -572,7 +568,11 @@ div.scroll2
     .bold_h5{
         font-weight: bold;
     }
-
+div.cont-pad{
+    background: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 
 /* End Job Offer Detail */
