@@ -9,6 +9,7 @@ body {
     /* border:1px solid#118063; */
     padding: 30px;
     border-radius: 5px;
+    border: 1px solid #eee;
 }
 .txt
 {
@@ -402,8 +403,8 @@ body {
 }
 
 .imagePreview {
-    width: 400%;
-    height: 300px;
+    width: 300%;
+    height: 200px;
     background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
     background-color: #fff;
     background-size: cover;
