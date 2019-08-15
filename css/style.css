@@ -274,12 +274,19 @@ body {
         text-align: justify;
         border-right: 1px solid #fff;
     }
-    div.scroll,div.scroll2{
-        height:800px;
+    div.scroll2{
+        height:700px;
         float: left;
-        overflow-y:scroll;
-        scrollbar-width: thin;
+        overflow-y:auto;
+        /* scrollbar-width: thin; */
         }
+    div.scroll{
+        height:765px;
+        float: left;
+        overflow-y:auto;
+        /* scrollbar-width: thin; */
+        }
+   
 
    
 /* End Search News List */
@@ -346,7 +353,7 @@ body {
           
         .search1
         {
-            margin-left:75%;
+            margin-left:85%;
             margin-top:-30px;
         }
         .input_height
@@ -474,24 +481,21 @@ body {
 /* Scroll Bar */
 #content::-webkit-scrollbar,
   .scroll::-webkit-scrollbar,
-  .scroll2::-webkit-scrollbar,
-  .scroll3::-webkit-scrollbar {
+  .scroll2::-webkit-scrollbar {
     width: 6px!important;
     background: #f7f7f7 !important;
   }
    
   #content::-webkit-scrollbar-track,
   .scroll::-webkit-scrollbar-track,
-  .scroll2::-webkit-scrollbar-track,
-  .scroll3::-webkit-scrollbar {
+  .scroll2::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)!important;     
     border-radius: 0px!important;
   }
    
   #content::-webkit-scrollbar-thumb,
   .scroll::-webkit-scrollbar-thumb,
-  .scroll2::-webkit-scrollbar-thumb,
-  .scroll3::-webkit-scrollbar {    
+  .scroll2::-webkit-scrollbar-thumb {    
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)!important; 
     background-color: #d7d7d7!important;
     border-radius: 0px!important;
@@ -501,7 +505,7 @@ body {
 .scroll3{
     height: 800px;
     float: left;
-    overflow-y:scroll;
+    overflow-y:auto;
 }
 /* End Job Apply Form*/
 /* News Tab */
@@ -568,7 +572,11 @@ div.scroll2
     .bold_h5{
         font-weight: bold;
     }
-
+div.cont-pad{
+    background: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 
 /* End Job Offer Detail */
