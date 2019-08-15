@@ -99,12 +99,13 @@
     background: #fff;
     margin: 10px 0px 0px 0px;
     border-radius: .25rem;
+    /* min-height: 350px !important; */
     /* max-height: 252px;
     min-height: 252px; */
     /* width: 49%; */
 }
 .tab-card{
-    min-height: 505px;
+    min-height: 400px;
        
 }
 .tab-content{
