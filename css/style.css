@@ -502,11 +502,7 @@ body {
   }
 /* End Scroll Bar */
 /*Job Apply Form*/
-.scroll3{
-    height: 800px;
-    float: left;
-    overflow-y:auto;
-}
+
 /* End Job Apply Form*/
 /* News Tab */
 .news-wrapper{
