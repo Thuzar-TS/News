@@ -15,7 +15,9 @@
     margin-left: 0px;
     margin-right: 0px;
 }
-
+.m-t-10{
+    margin-top: 10px !important;
+}
 .m-t-30 {
     margin-top:32px;
 }
@@ -29,7 +31,9 @@
 .m-b-30{
     margin-bottom: 30px;
 }
-
+/* .m-r-2per{
+    margin-right: 2% !important;
+} */
 .p-t-0 {
     padding-top: 0px;
 }
@@ -90,13 +94,14 @@
 }
 .box-searchmap{
     position: relative;
-    padding: 1rem .25rem;
+    padding: 16px;
     border: 1px solid rgba(0,0,0,.125);
     background: #fff;
-    margin: 10px 0px;
+    margin: 10px 0px 0px 0px;
     border-radius: .25rem;
-    max-height: 252px;
-    min-height: 252px;
+    /* max-height: 252px;
+    min-height: 252px; */
+    /* width: 49%; */
 }
 .tab-card{
     min-height: 505px;
