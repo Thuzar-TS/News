@@ -25,7 +25,7 @@
         <header class="navbar navbar-expand-lg fixed-top navbar-light main-header col-md-10 offset-md-1">
                 <a class="navbar-brand"><img src="../../images/news_search.png" alt=""></a>
                 <form class="form-inline container-fluid ">
-                        <input class="form-control col-lg mr-sm-2 d-flex p-2" type="search" placeholder="サーチ"
+                        <input class="form-control col-lg mr-sm-2 d-flex p-2" type="search" placeholder="検索"
                                 aria-label="Search">
                         <button class="btn my-2 my-sm-0 secondary-bg-color all-btn" type="submit">ウェブ検索</button>
                 </form>
@@ -44,48 +44,49 @@
         
                                                 </ol>
                                 </nav>
-                                <div class="row justify-content-md-center">
-                                        <div class="col-md container main-color">
-                                            <div class="row m-b-25">
-                                                <h4 class="h_4">Job Apply Form</h4>
+                                <div class="row justify-content-md-center" >
+                                        <div class="col-md container main-color" >
+                                            <div class="row m-b-25" >
+                                                <h4 class="h_4">求人応募フォーム</h4>
                                     
                                                 <div class="col-md-12 scroll2">
-                                                    <div class="col-md-8 offset-md-2">
+                                                    <div class="col-md-7 offset-md-3">
+                                                        <form>
                                                         <div class="form-group">
-                                                            <label for="form_ID">Job ID</label>
-                                                            <input type="text" class="form-control box" id="jobid" placeholder="please enter jobid" name="jobid">
+                                                            <!-- <label for="form_ID">ジョブID</label> -->
+                                                            <input type="text" class="form-control box" id="jobid" placeholder=" ジョブID" name="jobid">
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="form_name">Name</label>
-                                                            <input type="text" class="form-control box" id="email" placeholder="please enter name" name="name">
+                                                            <!-- <label for="form_name">名</label> -->
+                                                            <input type="text" class="form-control box" id="email" placeholder="名" name="name">
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="form_email">Email Address</label>
-                                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="please enter email address">
-                                                        </div>
-                                    
-                                                        <div class="form-group">
-                                                            <label for="form_phone">Phone Number</label>
-                                                            <input type="text" class="form-control box" id="phone" placeholder="please enter phone number" name="phone">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="form_address">Address</label>
-                                                            <input type="text" class="form-control box" id="address" placeholder="please enter address" name="address">
+                                                            <!-- <label for="form_email">電子メールアドレス</label> -->
+                                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="電子メールアドレス">
                                                         </div>
                                     
                                                         <div class="form-group">
-                                                            <label for="content">Content of enquiry</label>
-                                                            <textarea rows="8" cols="30" style="width: 100%;padding:5px;" placeholder="please enter content"></textarea>
+                                                            <!-- <label for="form_phone">電話番号</label> -->
+                                                            <input type="text" class="form-control box" id="phone" placeholder="電話番号" name="phone">
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="form_comp">Company Name</label>
-                                                            <input type="text" class="form-control box" id="comp" placeholder="please enter company name" name="comp">
+                                                            <!-- <label for="form_address">アドレッ</label> -->
+                                                            <input type="text" class="form-control box" id="address" placeholder="アドレッ" name="address">
                                                         </div>
                                     
                                                         <div class="form-group">
-                                                            <label for="form_need">Require occupations</label>
+                                                            <!-- <label for="content">コンテンツ</label> -->
+                                                            <textarea rows="8" cols="30" style="width: 100%;padding:5px;" placeholder="コンテンツ"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <!-- <label for="form_comp">Company Name</label> -->
+                                                            <input type="text" class="form-control box" id="comp" placeholder="会社名" name="comp">
+                                                        </div>
+                                    
+                                                        <div class="form-group">
+                                                            <!-- <label for="form_need">必要職業</label> -->
                                                             <select id="form_need" name="need" class="form-control" data-error="Please specify your need.">
-                                                                <option value="">please select job catagory</option>
+                                                                <option value="">必要職業</option>
                                                                 <option value="Doctor">Doctor</option>
                                                                 <option value="Nurse">Nurse</option>
                                                                 <option value="pharmacists">Pharmacists</option>
@@ -97,11 +98,11 @@
                                     
                                                         <div class="input-group mb-3">
                                                             <div class="input-group-prepend">
-                                                                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                                                                <span class="input-group-text" id="inputGroupFileAddon01">アップロード</span>
                                                             </div>
                                                             <div class="custom-file">
                                                                 <input type="file" class="custom-file-input" id="inputGroupFile01">
-                                                                <label class="custom-file-label" for="inputGroupFile01">Choose File</label>
+                                                                <label class="custom-file-label" for="inputGroupFile01">ファイルを選ぶ</label>
                                                             </div>
                                                         </div>
                                     
@@ -112,29 +113,29 @@
                                                 </div>
                                             </div>
                                             <div class="text-center">
-                                                <a href="../index.html" class="btn main-bg-color white all-btn">Apply for this job</a>
+                                                <a href="../index.html" class="btn main-bg-color white all-btn">募集</a>
                                             </div>
-                                    
+                                        </form>
                                         </div>
                                     
                                         <div class="col-md-auto">
                                             <div class="card m-b-10" style="width: 18rem;">
                                                 <div class="card-body">
-                                                    <h5 class="card-title text-center">Advertisement</h5>
+                                                    <h5 class="card-title text-center">一広告</h5>
                                                     <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                                                     <img src="../../images/company-profile1.png" alt="" class="img-responsivie" style="width:100%">
                                                 </div>
                                             </div>
                                             <div class="card m-b-10" style="width: 18rem;">
                                                 <div class="card-body">
-                                                    <h5 class="card-title text-center">Advertisement</h5>
+                                                    <h5 class="card-title text-center">二広告</h5>
                                                     <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                                                     <img src="../../images/logo_japanese_horizontal.png" alt="" class="img-responsivie" style="width:100%">
                                                 </div>
                                             </div>
                                             <div class="card m-b-10" style="width: 18rem;">
                                                 <div class="card-body">
-                                                    <h5 class="card-title text-center">Advertisement</h5>
+                                                    <h5 class="card-title text-center">三広告</h5>
                                                     <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                                                     <img src="../../images/company-profile1.png" alt="" class="img-responsivie" style="width:100%">
                                                 </div>
