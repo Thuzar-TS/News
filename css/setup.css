@@ -54,8 +54,10 @@
 .m-b-10{
     margin-bottom: 10px;
 }
-.all-btn{
+.secondary-bg-color{
     background-color: #f5a750;
+}
+.all-btn{
     color: #fff;
     border:none;
     min-width: 100px;
